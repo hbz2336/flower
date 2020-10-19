@@ -1,0 +1,28 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: SimSun, Arial, Helvetica, sans-serif;
+}
+
+ul{
+  margin-bottom: 0;
+  list-style: none;
+}
+.font_small{font-size:0.8rem}
+.font_mid{font-size: 0.9rem}
+
+.my_header,.my_footer{
+  width: 100%;
+  height:13rem;
+  border:0;
+}
+
+/* @media (min-width:576px){
+  .my_header{height:15rem;}
+  .my_footer{height:36rem;}
+}
+
+@media (min-width:992px){
+  .my_header{height:10rem;}
+  .my_footer{height:25rem;}
+} */

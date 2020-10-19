@@ -1,0 +1,114 @@
+/* 今日上新 */
+/* 知识点：给隐藏元素做过度效果 要用上visibility与opacity结合 */
+.img_pro{
+  position: relative;
+  overflow: hidden;
+  transition: transform .7s linear;
+}
+
+.img_pro p{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:2rem;
+  color:#fff;
+  font-weight: 600;
+  transition: all .6s linear;
+}
+
+.img_pro::before{
+  visibility: hidden;
+  opacity: 0;
+  content:'';
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: rgb(255,255,255,.3);
+  transition: all .5s linear;
+}
+
+.img_pro:hover{
+  transform:scale(1.06);
+}
+
+.img_pro:hover::before{
+  opacity: 1;
+  visibility: visible;
+}
+
+.img_pro:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* 限时促销 */
+
+.count_left .countdown_time{
+  box-shadow: rgba(187,187,187,1) -1px -1px 5px 1px;
+}
+
+.count_right .countdown_time{
+  box-shadow: rgba(187,187,187,1) 1px 1px 5px 1px;
+}
+
+.countdown_time i{
+  font-size:2rem;
+  font-weight: 700;
+}
+
+.img_count{
+  overflow: hidden;
+}
+
+.countdown img{
+  transition: transform 1.5s;
+}
+
+.countdown img:hover{
+  transform:scale(1.2);
+}
+
+/* 装点家园 */
+.decor_pro{
+  transition: all .8s linear;
+}
+.decor_pro i{
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.decor_pro:hover{
+  transform: scale(0.95);
+  box-shadow: rgba(187,187,187,1) 0 0 5px;
+}
+
+/* 精选帖子 */
+.kind .article a:hover{
+  text-decoration: none;
+}
+.kind .article .title{
+  font-size:17px;
+  font-weight: 600;
+}
+.kind .article .time{
+  color:rgb(179, 174, 174);
+}
+
+.kind .article .content{
+  color:gray;
+}
+
+/* 售后服务 */
+#serive .list p:first-child{
+  font-size: 18px;
+}
+
+#serive .list p:last-child{
+  font-size: 14px;
+  color:gray;
+}

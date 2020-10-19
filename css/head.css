@@ -1,0 +1,21 @@
+.header-top{
+  color:#707070;
+  background-color: #e0e0e0;
+}
+
+.header-top img{
+  width: 22px;
+  height: 22px;
+}
+
+.header-main{
+  background:url("../img/bg.jpg");
+}
+
+.logo{
+  height: 130px;
+}
+
+.header-nav ul li a{
+  color:#707070;
+}
